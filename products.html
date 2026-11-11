@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Nhorjanene Beauty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Logo">
+        <span>Nhorjanene Beauty</span>
+    </a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="header-icons">
+        <a href="#product-list">⌕</a>
+        <a href="#shopping-cart">🛍 <span id="cart-count">0</span></a>
+    </div>
+</header>
+
+<section class="page-banner">
+    <p>OUR BEAUTY COLLECTION</p>
+    <h1>Discover Our Products</h1>
+    <span>Find your everyday beauty essentials.</span>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <p>BEAUTY FAVORITES</p>
+        <h2>All Makeup Products</h2>
+    </div>
+
+    <div id="product-list" class="product-grid"></div>
+</section>
+
+<section class="cart-section section" id="shopping-cart">
+    <div class="section-heading">
+        <p>YOUR SELECTED ITEMS</p>
+        <h2>Shopping Cart</h2>
+    </div>
+
+    <div class="cart-box">
+        <div id="cart-items">
+            <p class="empty-cart">Your shopping cart is currently empty.</p>
+        </div>
+
+        <div class="cart-total">
+            <h3>Total: <span id="cart-total">₱0.00</span></h3>
+            <button class="btn" onclick="checkout()">PROCEED TO CHECKOUT</button>
+        </div>
+
+        <p class="demo-note">
+            Note: This is a demonstration shopping cart.
+            No actual payment will be processed.
+        </p>
+    </div>
+</section>
+
+<footer id="footer"></footer>
+
+</body>
+</html>
